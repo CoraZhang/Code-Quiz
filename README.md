@@ -13,7 +13,7 @@
 * Added media queries to fit into smaller screen
 * Added a sticky footer
 * Added audio, play different sounds when the user answer the question correctly and incorrectly
-
+* The final score will be the time remaining plus the questions the users got correct
 ## User Story
 
 ```
