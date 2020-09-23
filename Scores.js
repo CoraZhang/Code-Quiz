@@ -10,18 +10,14 @@ clear.addEventListener("click", function() {
 // Retreives and save local stroage 
 var allScores = localStorage.getItem("allScores");
 allScores = JSON.parse(allScores);
+if (allScores !== 0 && allScores !== null && allScores !== "") {
 
-if (allScores !== 0 && allScores !== null) {
-
-    for (var i = 0; i < allScores.length; i++) {
+    for (let i = 0; i < allScores.length; i++) {
 
         var createLi = document.createElement("li");
         createLi.textContent = "Initials: " + allScores[i].initials + "\n Score: " + allScores[i].score;
         highScore.appendChild(createLi);
-
     }
-} else {
-    createLi.textContent = "0";
 }
 // Event listener to go to index page
 goBack.addEventListener("click", function() {

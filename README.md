@@ -9,7 +9,8 @@
 * If the user answer the questions incorrectly, 10 seconds will be deducted from total time avaliable and there will be an alarm sound
 * When the game is over, the user will be able to save their initials and scores
 * Added a button to clear all saved scores
-* Added media queries to fix to smaller screen
+* Added a button to go back to the start page
+* Added media queries to fit into smaller screen
 * Added a sticky footer
 * Added audio, play different sounds when the user answer the question correctly and incorrectly
 
