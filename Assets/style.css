@@ -152,14 +152,6 @@
                 padding: 10px 15px;
                 font-size: 15px;
             }
-            #goBack {
-                position: relative;
-                left: 55%;
-            }
-            #clear {
-                position: relative;
-                right: 5%;
-            }
         }
         /* A Media Query max-width: 640px */
         
@@ -172,6 +164,15 @@
             #container-fluid {
                 position: absolute;
                 left: 10%;
+            }
+            #clear {
+                position: relative;
+                font-size: 12px;
+            }
+            #goBack {
+                position: relative;
+                left: 60%;
+                font-size: 12px;
             }
             #startTime {
                 margin-left: 33%;
