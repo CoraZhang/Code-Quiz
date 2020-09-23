@@ -13,10 +13,6 @@
 * Added a sticky footer
 * Added audio, play different sounds when the user answer the question correctly and incorrectly
 
-## What needs to be done
-
-* I plan to use a form to show high score and users' initials
-
 ## User Story
 
 ```
@@ -41,9 +37,14 @@ WHEN the game is over
 THEN I can save my initials and score
 ```
 
-The following animation demonstrates the application functionality:
+The following Screenshots demonstrates the application functionality:
 
-![code quiz](./Assets/04-web-apis-homework-demo.gif)
+![code quiz](.Assets/Start.jpg)
+![code quiz](.Assets/Questions.jpg)
+![code quiz](.Assets/Answercheck.jpg)
+![code quiz](.Assets/EnterInit.jpg)
+![code quiz](.Assets/ScoreBoard.jpg)
+![code quiz](.Assets/Clear.jpg)
 
 ### Review
 
