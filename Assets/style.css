@@ -179,6 +179,11 @@
                 padding: 10px 15px;
                 font-size: 10px;
             }
+            #currentTime {
+                float: right;
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 12px;
+            }
             #questionsDiv {
                 font-family: 'Josefin Sans', sans-serif;
                 font-size: 12px;
