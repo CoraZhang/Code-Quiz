@@ -39,20 +39,10 @@ THEN I can save my initials and score
 
 The following Screenshots demonstrates the application functionality:
 
-![code quiz](.Assets/Start.jpg)
-![code quiz](.Assets/Questions.jpg)
-![code quiz](.Assets/Answercheck.jpg)
-![code quiz](.Assets/EnterInit.jpg)
-![code quiz](.Assets/ScoreBoard.jpg)
-![code quiz](.Assets/Clear.jpg)
+![alt text](Assets/Start.png)
+![alt text](Assets/Questions.png)
+![alt text](Assets/Answercheck.png)
+![alt text](Assets/EnterInit.png)
+![alt text](Assets/ScoreBoard.png)
+![alt text](Assets/Clear.png)
 
-### Review
-
-You are required to submit the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
