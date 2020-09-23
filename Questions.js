@@ -9,6 +9,11 @@ var questions = [{
         answer: "parentheses"
     },
     {
+        title: "A very useful tool for used during development and debugging for printing content to the debugger is:",
+        choices: ["Javascript", "terminal / bash", "for loops", "console log"],
+        answer: "console log"
+    },
+    {
         title: "Arrays in Javascript can be used to store ____.",
         choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
         answer: "all of the above"
@@ -19,9 +24,9 @@ var questions = [{
         answer: "quotes"
     },
     {
-        title: "A very useful tool for used during development and debugging for printing content to the debugger is:",
-        choices: ["Javascript", "terminal / bash", "for loops", "console log"],
-        answer: "console log"
+        title: "Which event occurs when the user clicks on an HTML element?",
+        choices: ["onclick ", "onmouseover", "onchange", "onmouseclick"],
+        answer: "onclick "
     },
 
 ];
@@ -31,7 +36,7 @@ var score = 0;
 var questionIndex = 0;
 //Audio for correct and incorrect answers
 var sndCorrect = new Audio("./Assets/Correct.wav");
-var sndWrong = new Audio("./assets/Wrong.wav");
+var sndWrong = new Audio("./Assets/Wrong.wav");
 // Declared timer and question variables
 var currentTime = document.querySelector("#currentTime");
 var timer = document.querySelector("#startTime");
@@ -49,20 +54,22 @@ var ulCreate = document.createElement("ul");
 
 // Triggers timer on button, shows user a display on the screen when clicking
 timer.addEventListener("click", function() {
-    // We are checking zero because its originally set to zero
+
     if (holdInterval === 0) {
         holdInterval = setInterval(function() {
             secondsLeft--;
             currentTime.textContent = "Time: " + secondsLeft;
-
+            //Display the timer on webpage
             if (secondsLeft <= 0) {
                 clearInterval(holdInterval);
+                //End the test when the timer reaches 0
                 allDone();
                 currentTime.textContent = "Time's up!";
             }
         }, 1000);
     }
     render(questionIndex);
+    //call render function
 });
 
 // Renders questions and choices to page: 
@@ -77,7 +84,7 @@ function render(questionIndex) {
         var userChoices = questions[questionIndex].choices;
         questionsDiv.textContent = userQuestion;
     }
-    // New for each for question choices
+    // for each method to loop through question choices
     userChoices.forEach(function(newItem) {
         var listItem = document.createElement("li");
         listItem.textContent = newItem;
